@@ -109,13 +109,11 @@ async function makeBroccoli() {
     const step6 = await obtainInstruction('broccoli', 6);
     document.querySelector("#broccoli").innerHTML += `<li>${step6}</li>`;
 
-
-    // Additional step for when the broccoli is ready
     document.querySelector("#broccoli").innerHTML += "<li>Broccoli is ready!</li>";
   } catch (error) {
     console.error(error);
   }
 }
-
+makeBroccoli();
 // Bonus 2 - Promise all
 // ...
